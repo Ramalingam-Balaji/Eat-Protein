@@ -6,7 +6,7 @@ import {
   FaTimes,
   FaGooglePlay,
 } from "react-icons/fa";
-
+import logo from "../assets/logo.png";
 const navItems = [
   {
     name: "Home",
@@ -105,7 +105,7 @@ const Navbar = () => {
               className="bg-transparent border-none p-0"
             >
               <img
-                src="./src/assets/logo.png"
+                src={logo}
                 alt="Logo"
                 className="w-40 h-30 object-contain cursor-pointer"
               />
