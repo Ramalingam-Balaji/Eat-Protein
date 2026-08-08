@@ -139,7 +139,7 @@ const Hero = () => {
   />
   {/* Mobile Cards */}
 
-<div className="grid grid-cols-2 gap-4 mt-8 lg:hidden">
+<div className="grid grid-cols-1 gap-4 mt-1 lg:hidden">
 
   <div className="bg-white rounded-xl shadow-md p-4">
     <h3 className="text-green-600 font-bold">Protein Goal</h3>
@@ -151,10 +151,10 @@ const Hero = () => {
     <p className="text-2xl font-bold">420 kcal</p>
   </div>
 
-  <div className="bg-white rounded-xl shadow-md p-4">
+  {/*<div className="bg-white rounded-xl shadow-md p-4">
     <h3 className="text-blue-600 font-bold">Active Stores</h3>
     <p className="text-2xl font-bold">25+</p>
-  </div>
+  </div>*/}
 
   <div className="bg-white rounded-xl shadow-md p-4">
     <h3 className="text-red-500 font-bold">Diet Plan</h3>
