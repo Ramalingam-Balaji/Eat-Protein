@@ -19,9 +19,9 @@ const ProteinCalculator = () => {
   // INPUT STATES
   // ==============================
 
-  const [age, setAge] = useState(25);
-  const [weight, setWeight] = useState(60);
-  const [height, setHeight] = useState(165);
+  const [age, setAge] = useState("");
+  const [weight, setWeight] = useState("");
+  const [height, setHeight] = useState("");
   const [goal, setGoal] = useState("Weight Loss");
 
   // ==============================
@@ -223,9 +223,9 @@ const ProteinCalculator = () => {
   // ==============================
 
   const reset = () => {
-    setAge(25);
-    setWeight(60);
-    setHeight(165);
+    setAge("");
+    setWeight("");
+    setHeight("");
     setGoal("Weight Loss");
 
     setProtein(0);
@@ -333,83 +333,76 @@ const ProteinCalculator = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
 
-                {/* AGE */}
+                
+{/* AGE */}
+<div>
+  <label className="text-sm font-semibold text-gray-700">
+    Age
+  </label>
 
-                <div>
-                  <label className="text-sm font-semibold text-gray-700">
-                    Age
-                  </label>
+  <div className="flex mt-2">
+    <input
+      type="number"
+      min="1"
+      placeholder="0"
+      value={age}
+      onChange={(e) => setAge(e.target.value)}
+      className="w-full border border-gray-200 rounded-l-lg px-3 py-3 outline-none focus:ring-2 focus:ring-green-200 focus:border-green-500"
+    />
 
-                  <div className="flex mt-2">
+    <span className="bg-gray-100 px-3 flex items-center rounded-r-lg text-sm text-gray-500">
+      Years
+    </span>
+  </div>
+</div>
 
-                    <input
-                      type="number"
-                      min="1"
-                      value={age}
-                      onChange={(e) =>
-                        setAge(e.target.value)
-                      }
-                      className="w-full border border-gray-200 rounded-l-lg px-3 py-3 outline-none focus:ring-2 focus:ring-green-200 focus:border-green-500"
-                    />
 
-                    <span className="bg-gray-100 px-3 flex items-center rounded-r-lg text-sm text-gray-500">
-                      Years
-                    </span>
+{/* WEIGHT */}
+<div>
+  <label className="text-sm font-semibold text-gray-700">
+    Weight
+  </label>
 
-                  </div>
-                </div>
+  <div className="flex mt-2">
+    <input
+      type="number"
+      min="1"
+      placeholder="0"
+      value={weight}
+      onChange={(e) => setWeight(e.target.value)}
+      className="w-full border border-gray-200 rounded-l-lg px-3 py-3 outline-none focus:ring-2 focus:ring-green-200 focus:border-green-500"
+    />
 
-                {/* WEIGHT */}
+    <span className="bg-gray-100 px-3 flex items-center rounded-r-lg text-sm text-gray-500">
+      kg
+    </span>
+  </div>
+</div>
 
-                <div>
-                  <label className="text-sm font-semibold text-gray-700">
-                    Weight
-                  </label>
 
-                  <div className="flex mt-2">
+{/* HEIGHT */}
+<div>
+  <label className="text-sm font-semibold text-gray-700">
+    Height
+  </label>
 
-                    <input
-                      type="number"
-                      min="1"
-                      value={weight}
-                      onChange={(e) =>
-                        setWeight(e.target.value)
-                      }
-                      className="w-full border border-gray-200 rounded-l-lg px-3 py-3 outline-none focus:ring-2 focus:ring-green-200 focus:border-green-500"
-                    />
+  <div className="flex mt-2">
+    <input
+      type="number"
+      min="1"
+      placeholder="0"
+      value={height}
+      onChange={(e) => setHeight(e.target.value)}
+      className="w-full border border-gray-200 rounded-l-lg px-3 py-3 outline-none focus:ring-2 focus:ring-green-200 focus:border-green-500"
+    />
 
-                    <span className="bg-gray-100 px-3 flex items-center rounded-r-lg text-sm text-gray-500">
-                      kg
-                    </span>
+    <span className="bg-gray-100 px-3 flex items-center rounded-r-lg text-sm text-gray-500">
+      cm
+    </span>
+  </div>
+</div>
 
-                  </div>
-                </div>
 
-                {/* HEIGHT */}
-
-                <div>
-                  <label className="text-sm font-semibold text-gray-700">
-                    Height
-                  </label>
-
-                  <div className="flex mt-2">
-
-                    <input
-                      type="number"
-                      min="1"
-                      value={height}
-                      onChange={(e) =>
-                        setHeight(e.target.value)
-                      }
-                      className="w-full border border-gray-200 rounded-l-lg px-3 py-3 outline-none focus:ring-2 focus:ring-green-200 focus:border-green-500"
-                    />
-
-                    <span className="bg-gray-100 px-3 flex items-center rounded-r-lg text-sm text-gray-500">
-                      cm
-                    </span>
-
-                  </div>
-                </div>
 
                 {/* GOAL */}
 
