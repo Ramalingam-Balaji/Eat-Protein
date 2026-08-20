@@ -49,11 +49,11 @@ const Franchise = () => {
       id="franchise"
       className="w-full bg-white py-10 px-4 sm:px-6 lg:px-10 scroll-mt-20"
     >
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-350 mx-auto">
 
         {/* Main Franchise Container */}
 
-        <div className="overflow-hidden rounded-3xl border border-green-100 bg-gradient-to-r from-green-50 via-white to-green-50 shadow-sm hover:shadow-md transition duration-300">
+        <div className="overflow-hidden rounded-3xl border border-green-100 bg-linear-to-r from-green-50 via-white to-green-50 shadow-sm hover:shadow-md transition duration-300">
 
           <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
 
@@ -82,7 +82,7 @@ const Franchise = () => {
 
               <div className="flex items-center gap-2 mb-3">
 
-                <span className="w-8 h-[2px] bg-green-600"></span>
+                <span className="w-8 h-0.5 bg-green-600"></span>
 
                 <p className="text-green-600 text-sm font-bold tracking-wide">
                   BUSINESS OPPORTUNITY
@@ -187,7 +187,7 @@ const Franchise = () => {
 
                       {/* Icon */}
 
-                      <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600 text-lg group-hover:bg-green-600 group-hover:text-white transition duration-300">
+                      <div className="shrink-0 w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center text-green-600 text-lg group-hover:bg-green-600 group-hover:text-white transition duration-300">
 
                         {item.icon}
 

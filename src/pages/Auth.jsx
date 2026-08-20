@@ -21,7 +21,7 @@ const Auth = () => {
       <div className="max-w-5xl w-full grid lg:grid-cols-2 bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
         
         {/* Left Side - Branding / Image (Hidden on mobile) */}
-        <div className="hidden lg:flex flex-col justify-center bg-gradient-to-br from-green-600 to-green-800 p-12 text-white">
+        <div className="hidden lg:flex flex-col justify-center bg-linear-to-br from-green-600 to-green-800 p-12 text-white">
           <h2 className="text-4xl font-extrabold mb-4">
             {isLogin ? "Welcome Back!" : "Join Us Today!"}
           </h2>

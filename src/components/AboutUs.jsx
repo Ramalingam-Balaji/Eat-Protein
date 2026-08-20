@@ -15,9 +15,9 @@ const AboutUs = () => {
       id="about"
       className="w-full bg-white py-10 px-4 sm:px-6 lg:px-10 scroll-mt-20"
     >
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-350 mx-auto">
 
-        <div className="border border-gray-200 rounded-2xl overflow-hidden bg-gradient-to-r from-green-50 to-white shadow-sm">
+        <div className="border border-gray-200 rounded-2xl overflow-hidden bg-linear-to-r from-green-50 to-white shadow-sm">
 
           <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
 

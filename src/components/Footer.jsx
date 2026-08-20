@@ -16,7 +16,7 @@ const Footer = () => {
       className="w-full bg-green-950 text-white scroll-mt-20"
     >
 
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
+      <div className="max-w-350 mx-auto px-6 lg:px-10">
 
         {/* Main Footer */}
 

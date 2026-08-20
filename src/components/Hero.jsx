@@ -15,7 +15,7 @@ import {
 
 const Hero = () => {
   return (
-    <section  className="bg-gradient-to-r from-green-50 to-white pt-28">
+    <section  className="bg-linear-to-r from-green-50 to-white pt-28">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="grid lg:grid-cols-2 items-center">
@@ -135,7 +135,7 @@ const Hero = () => {
   <img
     src={hero}
     alt="Hero"
-    className="w-[300px] md:w-[360px] lg:w-[300px] relative z-10"
+    className="w-75 md:w-95 lg:w-75 relative z-10"
   />
   {/* Mobile Cards */}
 
